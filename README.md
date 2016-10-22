@@ -1,7 +1,7 @@
 # HopHacks2016
 Useful Links:
 
-WebGl Globe
+WebGl Globe:
 https://www.chromeexperiments.com/globe
 
 Nessie Api:
