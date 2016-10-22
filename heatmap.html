@@ -116,7 +116,7 @@
                 if (error) throw error;
 
                 for (i in data) {
-                    points.push(new google.maps.LatLng(data[i][0], data[i][0]));
+                    points.push(new google.maps.LatLng(data[i][0], data[i][1]));
                 }
 
             });
