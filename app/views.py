@@ -2,7 +2,7 @@ from flask import render_template
 from app import app
 
 
-@app.route('/')
+
 @app.route('/index')
 def index():
     return render_template('index.html')
@@ -15,6 +15,8 @@ def graph():
 def googleMap():
     return render_template('googleMap.html')
 
-@app.route('/hello')
-def hello():
-    return 'hello world!'
+@app.route('/')
+@app.route('/heatmap')
+def heatmap():
+    return render_template('heatmap.html')
+
