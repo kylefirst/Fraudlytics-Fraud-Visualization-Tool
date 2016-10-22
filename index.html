@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Nessie Stuff</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="viz"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var sampleSVG = d3.select("#viz")
+                .append("svg")
+                .attr("width", 1000)
+                .attr("height", 1000);
+
+            for (var i = 0; i < 10; i++) {
+                console.log("hello");
+                sampleSVG.append("rect")
+                    .style("stroke", "gray")
+                    .style("fill", "white")
+                    .attr("x", 20 * i)
+                    .attr("y", 100 - (10 * i))
+                    .attr("width", 20)
+                    .attr("height", 10 * i)
+                    .on("mouseover", function() {
+                        d3.select(this).style("fill", "aliceblue");
+                    })
+                    .on("mouseout", function() {
+                        d3.select(this).style("fill", "white");
+                    });
+            }
+
+
+        });
+    </script>
+
+    Nessie Stuff
+
+    <div id="msgid">
+    </div>
+
+</body>
+
+</html>
