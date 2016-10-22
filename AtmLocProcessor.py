@@ -4,7 +4,7 @@ import requests
 import json
 
 atmId = '0x56c66be5a73e492741506f56L'
-apiKey = 'ff49a2f8b4b6fcd5ea8883d568bc85f0'
+apiKey = 'Insert Key Here'
 
 
 
