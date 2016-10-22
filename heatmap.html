@@ -47,12 +47,12 @@
 </head>
 
 <body>
-    <div id="floating-panel">
+    <!-- <div id="floating-panel">
         <button onclick="toggleHeatmap()">Toggle Heatmap</button>
         <button onclick="changeGradient()">Change gradient</button>
         <button onclick="changeRadius()">Change radius</button>
         <button onclick="changeOpacity()">Change opacity</button>
-    </div>
+    </div> -->
     <div id="map"></div>
     <script>
         // This example requires the Visualization library. Include the libraries=visualization
@@ -191,10 +191,9 @@
                 },
 
                 mapTypeControlOptions: {
-                    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                        'styled_map'
-                    ]
-                }
+                    mapTypeIds: []
+                },
+                streetViewControl: false
             });
             map.mapTypes.set('styled_map', styledMapType);
             map.setMapTypeId('styled_map');
