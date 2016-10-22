@@ -53,7 +53,7 @@
             var svg = d3.select(map.getPanes().overayPane).append("svg"),
                 g = svg.append("g").attr("class", "leaflet-zoom-hide");
 
-            d3.json("points.json", function(geoShape) {
+            d3.json("{{ url_for('static',filename='crime.json')}}", function(geoShape) {
                     var transform = d3.geo.transform({
                             point: projectPoint
                         }),
