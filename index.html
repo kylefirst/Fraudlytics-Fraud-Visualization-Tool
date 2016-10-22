@@ -5,39 +5,57 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 
 </head>
 
 <body>
 
-    <div id="viz"></div>
+    <div id="viz" style="height:480px"></div>
 
     <script type="text/javascript">
         $(document).ready(function() {
 
-            var sampleSVG = d3.select("#viz")
-                .append("svg")
-                .attr("width", 1000)
-                .attr("height", 1000);
+            // var sampleSVG = d3.select("#viz")
+            //     .append("svg")
+            //     .attr("width", 1000)
+            //     .attr("height", 1000);
 
-            for (var i = 0; i < 10; i++) {
-                console.log("hello");
-                sampleSVG.append("rect")
-                    .style("stroke", "gray")
-                    .style("fill", "white")
-                    .attr("x", 20 * i)
-                    .attr("y", 100 - (10 * i))
-                    .attr("width", 20)
-                    .attr("height", 10 * i)
-                    .on("mouseover", function() {
-                        d3.select(this).style("fill", "aliceblue");
-                    })
-                    .on("mouseout", function() {
-                        d3.select(this).style("fill", "white");
-                    });
-            }
+            // for (var i = 0; i < 10; i++) {
+            //     console.log("hello");
+            //     sampleSVG.append("rect")
+            //         .style("stroke", "gray")
+            //         .style("fill", "white")
+            //         .attr("x", 20 * i)
+            //         .attr("y", 100 - (10 * i))
+            //         .attr("width", 20)
+            //         .attr("height", 10 * i)
+            //         .on("mouseover", function() {
+            //             d3.select(this).style("fill", "aliceblue");
+            //         })
+            //         .on("mouseout", function() {
+            //             d3.select(this).style("fill", "white");
+            //         });
+            // }
 
+            var map = L.map("viz").setView([0, 0], 0);
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                maxZoom: 18,
+                id: 'johannkm',
+                accessToken: 'pk.eyJ1Ijoiam9oYW5ua20iLCJhIjoiY2l1a3MzamplMDAxbTJvcDRnNWJuZXR0byJ9.OnyQemHZwOKjZ-8D_JMIeQ'
+            }).addTo(map);
+
+
+            var marker = L.marker([51.5, -0.09]).addTo(map);
+
+            marker.bindPopup("I am a marker").openPopup();
+            var popup = L.popup()
+                .setLatLng([0, 0])
+                .setContent("Hello")
+                .openOn(map);
 
         });
     </script>
