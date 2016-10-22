@@ -44,8 +44,8 @@
             z-index: 5;
         }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDdOjPBGXigzXG6gQ8vY-5FaBGuQGFqbM&callback=initMap&libraries=visualization" async defer></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
+
 </head>
 
 <body>
@@ -60,8 +60,14 @@
         // This example requires the Visualization library. Include the libraries=visualization
         // parameter when you first load the API. For example:
         // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization">
-        var map, heatmap;
+        var map, heatmap, vendors;
 
+        d3.json("{{ url_for('static', filename='merchantData.json')}}", function(error, data) {
+            if (error) throw error;
+            vendors = data.merchants;
+            console.log(vendors);
+        });
+        console.log(vendors);
         function initMap() {
             var styledMapType = new google.maps.StyledMapType(
                 [{
@@ -203,6 +209,25 @@
                 ],
                 opacity: 0.3
             });
+
+            for (var i = 0; i < 10; i++) {
+              console.log(vendors);
+                var vendorCircle = new google.maps.Map(document.getElementById('map'), {
+                    strokeColor: '#FF0000',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: '#FF0000',
+                    fillOpacity: 0.35,
+                    map: map,
+                    center: {
+                        lat: vendors.merchants[i].geocode.lat,
+                        lng: vendors.merchants[i].geocode.lng
+                    },
+                    radius: 4
+                })
+            }
+
+
         }
 
         function toggleHeatmap() {
@@ -235,28 +260,8 @@
             });
             return points;
         }
-
-        var vendors = [];
-        d3.json("{{ url_for('static', filename='vendors.json')}}", function(error, data) {
-            if (error) throw error;
-            for (i in data) {
-                var vendorCircle = new google.maps.Map(document.getElementById('map'), {
-                    strokeColor: '#FF0000',
-                    strokeOpacity: 0.8,
-                    strokeWeight: 2,
-                    fillColor: '#FF0000',
-                    fillOpacity: 0.35,
-                    map: map,
-                    center: {
-                        lat: i.geocode.lat,
-                        lon: i.geocode.lon
-                    },
-                    radius: 4
-                })
-            }
-        });
     </script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDdOjPBGXigzXG6gQ8vY-5FaBGuQGFqbM&callback=initMap&libraries=visualization" async defer></script>
 
 </body>
 
