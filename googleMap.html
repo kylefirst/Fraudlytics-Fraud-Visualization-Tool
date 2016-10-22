@@ -83,6 +83,7 @@
                 function transform(d) {
                     d = new google.maps.LatLng(d.value[0], d.value[1]);
                     d = projection.fromLatLngToDivPixel(d);
+                    console.log(d3.select(this.parentNode).datum());
                     return d3.select(this)
                         .style("left", (d.x - padding) + "px")
                         .style("top", (d.y - padding) + "px")
@@ -94,6 +95,4 @@
         // Bind our overlay to the map…
         overlay.setMap(map);
     });
-</script>
-rlay to the map… overlay.setMap(map); });
 </script>
