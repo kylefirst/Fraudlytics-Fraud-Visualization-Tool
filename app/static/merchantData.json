@@ -18,6 +18,7 @@
 			"lat": 38.90592240000001,
 			"lng": -77.04854859999999
 		},
+		"weights": "48",
 		"name": "Washington Marriott Georgetown"
 	}, {
 		"_id": "57cf75cea73e494d8675ef70",
@@ -38,6 +39,7 @@
 			"lat": 38.90471000000001,
 			"lng": -77.04753199999999
 		},
+		"weights": "50",
 		"name": "Renaissance Washington, DC Dupont Circle Hotel"
 	}, {
 		"_id": "57cf75cea73e494d8675ef71",
@@ -60,6 +62,7 @@
 			"lat": 38.9159856,
 			"lng": -77.0467961
 		},
+		"weights": "48",
 		"name": "Courtyard Washington, DC/Dupont Circle"
 	}, {
 		"_id": "57cf75cea73e494d8675ef72",
@@ -81,6 +84,7 @@
 			"lat": 38.9044783,
 			"lng": -77.03980469999999
 		},
+		"weights": "62",
 		"name": "The Mayflower Hotel, Autograph Collection"
 	}, {
 		"_id": "57cf75cea73e494d8675ef73",
@@ -102,6 +106,7 @@
 			"lat": 38.896306,
 			"lng": -77.03159099999999
 		},
+		"weights": "74",
 		"name": "JW Marriott Washington, DC"
 	}, {
 		"_id": "57cf75cea73e494d8675ef76",
@@ -123,6 +128,7 @@
 			"lat": 38.8970727,
 			"lng": -77.00948079999999
 		},
+		"weights": "96",
 		"name": "Phoenix Park Hotel"
 	}, {
 		"_id": "57cf75cea73e494d8675ef79",
@@ -143,6 +149,7 @@
 			"lat": 38.9292478,
 			"lng": -77.0335025
 		},
+		"weights": "58",
 		"name": "Best Buy"
 	}, {
 		"_id": "57cf75cea73e494d8675ef7c",
@@ -166,6 +173,7 @@
 			"lat": 38.9093874,
 			"lng": -77.033361
 		},
+		"weights": "71",
 		"name": "Whole Foods Market"
 	}, {
 		"_id": "57cf75cea73e494d8675ef7f",
@@ -186,6 +194,7 @@
 			"lat": 38.901179,
 			"lng": -77.037579
 		},
+		"weights": "66",
 		"name": "Blackfinn Ameripub - DC"
 	}, {
 		"_id": "57cf75cea73e494d8675ef83",
@@ -206,6 +215,7 @@
 			"lat": 38.89573530000001,
 			"lng": -77.02829
 		},
+		"weights": "78",
 		"name": "Elephant & Castle"
 	}, {
 		"_id": "57cf75cea73e494d8675ef85",
@@ -229,6 +239,7 @@
 			"lat": 38.9292886,
 			"lng": -77.033126
 		},
+		"weights": "59",
 		"name": "Target"
 	}, {
 		"_id": "57cf75cea73e494d8675ef86",
@@ -249,6 +260,7 @@
 			"lat": 38.9050493,
 			"lng": -77.0431319
 		},
+		"weights": "57",
 		"name": "Tschiffely Pharmacy"
 	}, {
 		"_id": "57cf75cea73e494d8675ef87",
@@ -264,6 +276,7 @@
 			"lat": 38.89627350000001,
 			"lng": -77.0268024
 		},
+		"weights": "80",
 		"name": "T-Mobile Washington"
 	}, {
 		"_id": "57cf75cea73e494d8675ef88",
@@ -284,6 +297,7 @@
 			"lat": 38.900388,
 			"lng": -76.9890312
 		},
+		"weights": "100",
 		"name": "Toki Underground"
 	}, {
 		"_id": "57cf75cea73e494d8675ef8a",
@@ -307,6 +321,7 @@
 			"lat": 38.898759,
 			"lng": -77.0286763
 		},
+		"weights": "78",
 		"name": "Macy's"
 	}, {
 		"_id": "57cf75cea73e494d8675ef91",
@@ -326,6 +341,7 @@
 			"lat": 38.90593259999999,
 			"lng": -77.0624358
 		},
+		"weights": "22",
 		"name": "Apple Georgetown"
 	}, {
 		"_id": "57cf75cea73e494d8675ef93",
@@ -341,6 +357,7 @@
 			"lat": 38.9010284,
 			"lng": -77.0292309
 		},
+		"weights": "77",
 		"name": "Blick Art Materials"
 	}, {
 		"_id": "57cf75cea73e494d8675ef94",
@@ -356,6 +373,7 @@
 			"lat": 38.9003929,
 			"lng": -76.98930639999999
 		},
+		"weights": "100",
 		"name": "Sticky Rice"
 	}, {
 		"_id": "57cf75cea73e494d8675ef99",
@@ -377,6 +395,7 @@
 			"lat": 38.9119389,
 			"lng": -77.0387138
 		},
+		"weights": "63",
 		"name": "Safeway"
 	}, {
 		"_id": "57cf75cea73e494d8675ef9a",
@@ -397,6 +416,7 @@
 			"lat": 38.89796129999999,
 			"lng": -77.03333549999999
 		},
+		"weights": "71",
 		"name": "Old Ebbitt Grill"
 	}, {
 		"_id": "57cf75cea73e494d8675ef9b",
@@ -418,6 +438,7 @@
 			"lat": 38.90275750000001,
 			"lng": -77.0442411
 		},
+		"weights": "55",
 		"name": "Cities Restaurant & Lounge"
 	}, {
 		"_id": "57cf75cea73e494d8675ef9d",
@@ -438,6 +459,7 @@
 			"lat": 38.9222794,
 			"lng": -77.0422279
 		},
+		"weights": "52",
 		"name": "Smoke & Barrel"
 	}, {
 		"_id": "57cf75cea73e494d8675efa1",
@@ -453,6 +475,7 @@
 			"lat": 38.9044371,
 			"lng": -77.0406369
 		},
+		"weights": "61",
 		"name": "Gap"
 	}, {
 		"_id": "57cf75cea73e494d8675efa9",
@@ -468,6 +491,7 @@
 			"lat": 38.89410290000001,
 			"lng": -77.02349930000001
 		},
+		"weights": "83",
 		"name": "PAUL"
 	}, {
 		"_id": "57cf75cea73e494d8675efaa",
@@ -489,6 +513,7 @@
 			"lat": 38.906329,
 			"lng": -77.041915
 		},
+		"weights": "59",
 		"name": "Shake Shack"
 	}, {
 		"_id": "57cf75cea73e494d8675efac",
@@ -510,6 +535,7 @@
 			"lat": 38.9086717,
 			"lng": -77.0431104
 		},
+		"weights": "57",
 		"name": "Krispy Kreme"
 	}, {
 		"_id": "57cf75cea73e494d8675efad",
@@ -530,6 +556,7 @@
 			"lat": 38.9003072,
 			"lng": -77.0445699
 		},
+		"weights": "55",
 		"name": "Founding Farmers DC"
 	}, {
 		"_id": "57cf75cea73e494d8675efae",
@@ -553,6 +580,7 @@
 			"lat": 38.9304954,
 			"lng": -77.0281322
 		},
+		"weights": "63",
 		"name": "Room 11"
 	}, {
 		"_id": "57cf75cea73e494d8675efaf",
@@ -568,6 +596,7 @@
 			"lat": 38.897532,
 			"lng": -77.0269435
 		},
+		"weights": "80",
 		"name": "H&M"
 	}, {
 		"_id": "57cf75cea73e494d8675efb0",
@@ -583,6 +612,7 @@
 			"lat": 38.8975035,
 			"lng": -77.0301645
 		},
+		"weights": "76",
 		"name": "District Taco - Metro Center"
 	}, {
 		"_id": "57cf75cea73e494d8675efbc",
@@ -603,6 +633,7 @@
 			"lat": 38.8976398,
 			"lng": -77.03248529999999
 		},
+		"weights": "73",
 		"name": "The Hamilton"
 	}, {
 		"_id": "57cf75cea73e494d8675efbd",
@@ -618,6 +649,7 @@
 			"lat": 38.8964101,
 			"lng": -77.0289521
 		},
+		"weights": "77",
 		"name": "Warner Theatre"
 	}, {
 		"_id": "57cf75cea73e494d8675efbe",
@@ -633,6 +665,7 @@
 			"lat": 38.897779,
 			"lng": -77.0264097
 		},
+		"weights": "80",
 		"name": "Zara"
 	}, {
 		"_id": "57cf75cea73e494d8675efc4",
@@ -653,6 +686,7 @@
 			"lat": 38.9168404,
 			"lng": -77.0371078
 		},
+		"weights": "63",
 		"name": "Local 16"
 	}, {
 		"_id": "57cf75cea73e494d8675efc5",
@@ -673,6 +707,7 @@
 			"lat": 38.9009607,
 			"lng": -77.04983039999999
 		},
+		"weights": "46",
 		"name": "CIRCA at Foggy Bottom"
 	}, {
 		"_id": "57cf75cea73e494d8675efc8",
@@ -696,6 +731,7 @@
 			"lat": 38.9146999,
 			"lng": -77.0322925
 		},
+		"weights": "70",
 		"name": "Ted's Bulletin"
 	}, {
 		"_id": "57cf75cea73e494d8675efc9",
@@ -719,6 +755,7 @@
 			"lat": 38.9209629,
 			"lng": -77.07106279999999
 		},
+		"weights": "0",
 		"name": "Whole Foods Market"
 	}, {
 		"_id": "57cf75cea73e494d8675efcb",
@@ -734,6 +771,7 @@
 			"lat": 38.9215086,
 			"lng": -77.0437462
 		},
+		"weights": "50",
 		"name": "Fleet Feet Sports"
 	}, {
 		"_id": "57cf75cea73e494d8675efce",
@@ -755,6 +793,7 @@
 			"lat": 38.9196532,
 			"lng": -76.9722512
 		},
+		"weights": "80",
 		"name": "stadiumclub"
 	}, {
 		"_id": "57cf75cea73e494d8675efd2",
@@ -775,6 +814,7 @@
 			"lat": 38.89488079999999,
 			"lng": -77.0212781
 		},
+		"weights": "86",
 		"name": "Rasika"
 	}, {
 		"_id": "57cf75cea73e494d8675efd5",
@@ -800,6 +840,7 @@
 			"lat": 38.9160568,
 			"lng": -77.0673494
 		},
+		"weights": "10",
 		"name": "Safeway"
 	}, {
 		"_id": "57cf75cea73e494d8675efd6",
@@ -820,6 +861,7 @@
 			"lat": 38.8987445,
 			"lng": -77.023684
 		},
+		"weights": "84",
 		"name": "Zaytinya"
 	}, {
 		"_id": "57cf75cea73e494d8675efd7",
@@ -835,6 +877,7 @@
 			"lat": 38.9216102,
 			"lng": -77.0419837
 		},
+		"weights": "53",
 		"name": "Sakuramen Ramen Bar"
 	}, {
 		"_id": "57cf75cea73e494d8675efd8",
@@ -850,6 +893,7 @@
 			"lat": 38.8985735,
 			"lng": -77.0196376
 		},
+		"weights": "88",
 		"name": "Daikaya - Ramen (1F), Izakaya (2F)"
 	}, {
 		"_id": "57cf75cea73e494d8675efd9",
@@ -865,6 +909,7 @@
 			"lat": 38.8999909,
 			"lng": -77.0003909
 		},
+		"weights": "100",
 		"name": "Ethiopic Restaurant"
 	}, {
 		"_id": "57cf75cea73e494d8675efdc",
@@ -885,6 +930,7 @@
 			"lat": 38.8951723,
 			"lng": -77.02685029999999
 		},
+		"weights": "79",
 		"name": "Central Michel Richard"
 	}, {
 		"_id": "57cf75cea73e494d8675efde",
@@ -906,6 +952,7 @@
 			"lat": 38.9040782,
 			"lng": -77.0379947
 		},
+		"weights": "65",
 		"name": "Barcode"
 	}, {
 		"_id": "57cf75cea73e494d8675efe0",
@@ -929,6 +976,7 @@
 			"lat": 38.905045,
 			"lng": -77.05291
 		},
+		"weights": "40",
 		"name": "MI Skin Dermatology Center"
 	}, {
 		"_id": "57cf75cea73e494d8675efe1",
@@ -944,6 +992,7 @@
 			"lat": 38.9095123,
 			"lng": -77.04513779999999
 		},
+		"weights": "53",
 		"name": "DUPONT PIZZA"
 	}, {
 		"_id": "57cf75cea73e494d8675efe3",
@@ -965,6 +1014,7 @@
 			"lat": 38.9208562,
 			"lng": -76.99075239999999
 		},
+		"weights": "88",
 		"name": "The Home Depot"
 	}, {
 		"_id": "57cf75cea73e494d8675efe7",
@@ -985,6 +1035,7 @@
 			"lat": 38.901261,
 			"lng": -77.059843
 		},
+		"weights": "27",
 		"name": "Sequoia DC"
 	}, {
 		"_id": "57cf75cea73e494d8675efe8",
@@ -1005,6 +1056,7 @@
 			"lat": 38.915173,
 			"lng": -77.045632
 		},
+		"weights": "50",
 		"name": "Buca di Beppo - Washington, D.C."
 	}, {
 		"_id": "57cf75cea73e494d8675efea",
@@ -1020,6 +1072,7 @@
 			"lat": 38.90584700000001,
 			"lng": -77.043081
 		},
+		"weights": "57",
 		"name": "Chipotle Mexican Grill"
 	}, {
 		"_id": "57cf75cea73e494d8675efeb",
@@ -1035,6 +1088,7 @@
 			"lat": 38.90522889999999,
 			"lng": -77.0379615
 		},
+		"weights": "65",
 		"name": "National Geographic Store"
 	}, {
 		"_id": "57cf75cea73e494d8675efee",
@@ -1055,6 +1109,7 @@
 			"lat": 38.899986,
 			"lng": -77.027335
 		},
+		"weights": "80",
 		"name": "Capitol City Brewing Company"
 	}, {
 		"_id": "57cf75cea73e494d8675efef",
@@ -1076,6 +1131,7 @@
 			"lat": 38.9040372,
 			"lng": -77.0438703
 		},
+		"weights": "56",
 		"name": "Staples"
 	}, {
 		"_id": "57cf75cea73e494d8675eff0",
@@ -1091,6 +1147,7 @@
 			"lat": 38.9052622,
 			"lng": -77.0661745
 		},
+		"weights": "15",
 		"name": "Georgetown Cupcake"
 	}, {
 		"_id": "57cf75cea73e494d8675eff1",
@@ -1111,6 +1168,7 @@
 			"lat": 38.897074,
 			"lng": -77.0242449
 		},
+		"weights": "83",
 		"name": "Gordon Biersch"
 	}, {
 		"_id": "57cf75cea73e494d8675eff2",
@@ -1131,6 +1189,7 @@
 			"lat": 38.8864534,
 			"lng": -76.9964735
 		},
+		"weights": "99",
 		"name": "Eastern Market"
 	}, {
 		"_id": "57cf75cea73e494d8675eff5",
@@ -1151,6 +1210,7 @@
 			"lat": 38.9018602,
 			"lng": -77.0332923
 		},
+		"weights": "72",
 		"name": "Siroc Restaurant"
 	}, {
 		"_id": "57cf75cea73e494d8675eff6",
@@ -1171,6 +1231,7 @@
 			"lat": 38.9004282,
 			"lng": -77.0222921
 		},
+		"weights": "85",
 		"name": "RFD Washington"
 	}, {
 		"_id": "57cf75cea73e494d8675eff8",
@@ -1191,6 +1252,7 @@
 			"lat": 38.9060303,
 			"lng": -77.0431136
 		},
+		"weights": "57",
 		"name": "Irish Whiskey Public House"
 	}, {
 		"_id": "57cf75cea73e494d8675effa",
@@ -1206,6 +1268,7 @@
 			"lat": 38.8970398,
 			"lng": -77.0276761
 		},
+		"weights": "79",
 		"name": "Tosca"
 	}, {
 		"_id": "57cf75cea73e494d8675effb",
@@ -1221,6 +1284,7 @@
 			"lat": 38.9058944,
 			"lng": -77.0408733
 		},
+		"weights": "61",
 		"name": "Brooks Brothers"
 	}, {
 		"_id": "57cf75cea73e494d8675effc",
@@ -1241,6 +1305,7 @@
 			"lat": 38.9015941,
 			"lng": -77.0442144
 		},
+		"weights": "55",
 		"name": "KAZ Sushi Bistro"
 	}, {
 		"_id": "57cf75cea73e494d8675effe",
@@ -1256,6 +1321,7 @@
 			"lat": 38.9136898,
 			"lng": -77.0450791
 		},
+		"weights": "52",
 		"name": "Filter Coffeehouse and Espresso Bar"
 	}, {
 		"_id": "57cf75cea73e494d8675efff",
@@ -1271,6 +1337,7 @@
 			"lat": 38.899013,
 			"lng": -77.022318
 		},
+		"weights": "85",
 		"name": "Rocket Bar"
 	}, {
 		"_id": "57cf75cea73e494d8675f004",
@@ -1291,6 +1358,7 @@
 			"lat": 38.9179709,
 			"lng": -77.03166809999999
 		},
+		"weights": "69",
 		"name": "Busboys and Poets"
 	}, {
 		"_id": "57cf75cea73e494d8675f009",
@@ -1306,6 +1374,7 @@
 			"lat": 38.90171099999999,
 			"lng": -77.049791
 		},
+		"weights": "46",
 		"name": "Burger Tap & Shake Foggy Bottom"
 	}, {
 		"_id": "57cf75cea73e494d8675f00a",
@@ -1326,6 +1395,7 @@
 			"lat": 38.8949657,
 			"lng": -77.0217231
 		},
+		"weights": "85",
 		"name": "Oyamel Cocina Mexicana"
 	}, {
 		"_id": "57cf75cea73e494d8675f00c",
@@ -1346,6 +1416,7 @@
 			"lat": 38.911614,
 			"lng": -77.045036
 		},
+		"weights": "53",
 		"name": "Darlington House"
 	}, {
 		"_id": "57cf75cea73e494d8675f00d",
@@ -1368,6 +1439,7 @@
 			"lat": 38.9053257,
 			"lng": -77.0428354
 		},
+		"weights": "57",
 		"name": "Au Bon Pain"
 	}, {
 		"_id": "57cf75cea73e494d8675f00e",
@@ -1388,6 +1460,7 @@
 			"lat": 38.9319143,
 			"lng": -77.028443
 		},
+		"weights": "61",
 		"name": "Meridian Pint"
 	}, {
 		"_id": "57cf75cea73e494d8675f015",
@@ -1408,6 +1481,7 @@
 			"lat": 38.9016147,
 			"lng": -77.0268526
 		},
+		"weights": "80",
 		"name": "Casa Luca"
 	}, {
 		"_id": "57cf75cea73e494d8675f016",
@@ -1428,6 +1502,7 @@
 			"lat": 38.895667,
 			"lng": -77.02860299999999
 		},
+		"weights": "77",
 		"name": "Del Frisco's Grille"
 	}, {
 		"_id": "57cf75cea73e494d8675f017",
@@ -1448,6 +1523,7 @@
 			"lat": 38.9005467,
 			"lng": -77.0385055
 		},
+		"weights": "64",
 		"name": "The Oval Room"
 	}, {
 		"_id": "57cf75cea73e494d8675f018",
@@ -1468,6 +1544,7 @@
 			"lat": 38.8944526,
 			"lng": -77.0009663
 		},
+		"weights": "100",
 		"name": "Bistro Cacao"
 	}, {
 		"_id": "57cf75cea73e494d8675f019",
@@ -1483,6 +1560,7 @@
 			"lat": 38.8975415,
 			"lng": -77.0288719
 		},
+		"weights": "77",
 		"name": "The Oceanaire Seafood Room"
 	}, {
 		"_id": "57cf75cea73e494d8675f01a",
@@ -1498,6 +1576,7 @@
 			"lat": 38.9127627,
 			"lng": -77.04726289999999
 		},
+		"weights": "48",
 		"name": "Restaurant Nora"
 	}, {
 		"_id": "57cf75cea73e494d8675f01d",
@@ -1513,6 +1592,7 @@
 			"lat": 38.8773559,
 			"lng": -77.02054609999999
 		},
+		"weights": "78",
 		"name": "Arena Stage at the Mead Center for American Theater"
 	}, {
 		"_id": "57cf75cea73e494d8675f01e",
@@ -1533,6 +1613,7 @@
 			"lat": 38.89512929999999,
 			"lng": -77.02224129999999
 		},
+		"weights": "85",
 		"name": "Hill Country Barbecue Market"
 	}, {
 		"_id": "57cf75cea73e494d8675f01f",
@@ -1553,6 +1634,7 @@
 			"lat": 38.9000325,
 			"lng": -77.0225098
 		},
+		"weights": "85",
 		"name": "matchbox"
 	}, {
 		"_id": "57cf75cea73e494d8675f024",
@@ -1568,6 +1650,7 @@
 			"lat": 38.9009706,
 			"lng": -77.03862190000001
 		},
+		"weights": "64",
 		"name": "Equinox"
 	}, {
 		"_id": "57cf75cea73e494d8675f025",
@@ -1583,6 +1666,7 @@
 			"lat": 38.886652,
 			"lng": -76.996438
 		},
+		"weights": "99",
 		"name": "The Market Lunch"
 	}, {
 		"_id": "57cf75cea73e494d8675f026",
@@ -1598,6 +1682,7 @@
 			"lat": 38.9054062,
 			"lng": -77.0390541
 		},
+		"weights": "63",
 		"name": "The Louver Shop Washington DC"
 	}, {
 		"_id": "57cf75cea73e494d8675f027",
@@ -1618,6 +1703,7 @@
 			"lat": 38.92123,
 			"lng": -77.0418911
 		},
+		"weights": "53",
 		"name": "The Black Squirrel"
 	}, {
 		"_id": "57cf75cea73e494d8675f028",
@@ -1631,6 +1717,7 @@
 			"lat": 38.893586,
 			"lng": -77.0215764
 		},
+		"weights": "85",
 		"name": "Grand Army of the Republic Memorial"
 	}, {
 		"_id": "57cf75cea73e494d8675f029",
@@ -1652,6 +1739,7 @@
 			"lat": 38.9084906,
 			"lng": -77.0313625
 		},
+		"weights": "74",
 		"name": "ChurchKey"
 	}, {
 		"_id": "57cf75cea73e494d8675f02c",
@@ -1672,6 +1760,7 @@
 			"lat": 38.8750685,
 			"lng": -77.00073499999999
 		},
+		"weights": "93",
 		"name": "Bluejacket"
 	}, {
 		"_id": "57cf75cea73e494d8675f02d",
@@ -1692,6 +1781,7 @@
 			"lat": 38.90742270000001,
 			"lng": -77.0399782
 		},
+		"weights": "62",
 		"name": "The Tabard Inn"
 	}]
 }
