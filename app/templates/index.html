@@ -304,13 +304,16 @@
                     content: ""
                 });
                 for (var i = 0; i < data.merchants.length; i++) {
+                    var name = data.merchants[i].name;
+                    var type = data.merchants[i].category[0].replace(/_/g, ' ');
+                    var level = data.merchants[i].weights;
                     var marker = new google.maps.Marker({
                         position: data.merchants[i].geocode,
                         map: map,
                         title: data.merchants[i].name,
                         clickable: true
                     });
-                    var windowText = "<b>" + data.merchants[i].name + "</b><br>" + data.merchants[i].weights;
+                    var windowText = "<b>" + name + "</b><br>" + type + "<br>" + warningMessage(level);
                     windows.push(windowText);
                     markers.push(marker);
                     markers[i].info = windowText;
@@ -319,8 +322,6 @@
                     ] = windowText;
                     // marker.setVisible(false);
                     marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
-                    var name = data.merchants[i].name;
-                    var type = data.merchants[i].category[0].replace(/_/g, ' ');
                     $("#myTable").append(
                         "<tr id=link" + i + "><td><b>" + name + "</b></td><td>" + type + "</td></tr>"
                     );
@@ -334,7 +335,7 @@
                         var ind = i;
                         return function() {
                             map.panTo(markers[ind].position);
-                            map.setZoom(17);
+                            map.setZoom(15);
                             infoWindow.set("content", windows[ind]);
                             infoWindow.open(map, markers[ind]);
                         }
@@ -356,7 +357,7 @@
                         }
                     })();
                     markers[i].addListener('click', function() {
-                        console.log(this);
+                        // console.log(this);
                         infoWindow.set("content", this.info);
                         infoWindow.open(map, this);
                     });
@@ -396,6 +397,20 @@
 
             });
             return points;
+        }
+
+        function warningMessage(level) {
+            var res = "Threat factor: ";
+            if (level < 30) {
+                res += '<span style="background-color: #a8db9b">LOW</span>';
+            } else {
+                if (level < 65) {
+                    res += '<span style="background-color: #ffd000">MODERATE</span>';
+                } else {
+                    res += '<span style="color: white; background-color: #ad0000">HIGH</span>';
+                }
+            }
+            return res + " (" + level + ")";
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDdOjPBGXigzXG6gQ8vY-5FaBGuQGFqbM&callback=initMap&libraries=visualization">
