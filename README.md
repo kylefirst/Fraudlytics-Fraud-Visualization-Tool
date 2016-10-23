@@ -1,4 +1,4 @@
-# HopHacks2016
+# Data driven transaction fraud web visualization tool
 # Sources:
 
 Crime Data:
