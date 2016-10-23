@@ -297,20 +297,55 @@
                 if (error) throw error;
                 // console.log(data);
                 var vendors = [];
+                var markers = [];
+                var windows = [];
                 for (var i = 0; i < data.merchants.length; i++) {
                     var marker = new google.maps.Marker({
                         position: data.merchants[i].geocode,
                         map: map,
                         title: data.merchants[i].name
                     });
+                    var windowText = new google.maps.InfoWindow({
+                            content:
+                        })
+                        // marker.setVisible(false);
+                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
+
+                    markers.push(marker);
                     var name = data.merchants[i].name;
                     var type = data.merchants[i].category[0].replace(/_/g, ' ');
                     $("#myTable").append(
                         "<tr id=link" + i + "><td><b>" + name + "</b></td><td>" + type + "</td></tr>"
                     );
-                    $("#link" + i).onclick = (function() {
-                        window.alert(i);
-                    });
+
+                }
+
+                var table = document.getElementById("myTable");
+                var rows = table.getElementsByTagName("tr");
+                for (var i = 0; i < rows.length; i++) {
+                    rows[i].onclick = (function() {
+                        var ind = i;
+                        return function() {
+                            map.panTo(markers[ind].position);
+                            map.setZoom(17);
+                        }
+                    })();
+                    rows[i].onmouseover = (function() {
+                        var ind = i;
+                        return function() {
+                            // markers[ind].setVisible(true);
+                            markers[ind].setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+
+                        }
+                    })();
+                    rows[i].onmouseout = (function() {
+                        var ind = i;
+                        return function() {
+                            // markers[ind].setVisible(false);
+                            markers[ind].setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
+
+                        }
+                    })();
                 }
             });
 
