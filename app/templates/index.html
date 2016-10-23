@@ -119,18 +119,6 @@
                 <div id="textBox">
                     <input id="myInput" onkeyup="search()" placeholder="Search..." type="text">
                     <table id="myTable">
-                        <tr>
-                            <td>Macy's</td>
-                            <td>Safe</td>
-                        </tr>
-                        <tr>
-                            <td>Bob's Burgers</td>
-                            <td>Dangerous</td>
-                        </tr>
-                        <tr>
-                            <td>The Food Palace</td>
-                            <td>Moderate</td>
-                        </tr>
                     </table>
                 </div>
             </div>
@@ -315,7 +303,14 @@
                         map: map,
                         title: data.merchants[i].name
                     });
-
+                    var name = data.merchants[i].name;
+                    var type = data.merchants[i].category[0].replace(/_/g, ' ');
+                    $("#myTable").append(
+                        "<tr id=link" + i + "><td><b>" + name + "</b></td><td>" + type + "</td></tr>"
+                    );
+                    $("#link" + i).onclick = (function() {
+                        window.alert(i);
+                    });
                 }
             });
 
