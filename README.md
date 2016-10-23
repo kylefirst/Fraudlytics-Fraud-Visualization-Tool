@@ -6,6 +6,7 @@ Credit card Transactions (From Nessie API) in DC are shown on a map in conjuncti
 
 ![Alt text](/sample.PNG "Screenshot")
 ![Alt text](/sample2.PNG "Screenshot2")
+![Alt text](/sample3.PNG "Screenshot3")
 
 # Sources
 Crime Data:
