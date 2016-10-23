@@ -5,6 +5,7 @@ Then you can view the website on localhost:5000
 Credit card Transactions (From Nessie API) in DC are shown on a map in conjunction with a heatmap of crime occurences and merchant/vendor locations parterned with Capital-One.
 
 ![Alt text](/sample.PNG "Screenshot")
+![Alt text](/sample2.PNG "Screenshot2")
 
 # Sources
 Crime Data:
