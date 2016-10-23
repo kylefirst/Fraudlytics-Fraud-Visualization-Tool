@@ -158,13 +158,40 @@
                 </div>
 
                 <div class="modal-body">
-                    <button class="btn btn-primary" onclick="toggleHeatmap()">Toggle Heatmap</button>
-                    <button class="btn btn-primary" onclick="changeGradient()">Change gradient</button>
+                    <p>Show/Hide</p>
+                    <button class="btn btn-primary" onclick="changeCustomers()">Toggle customer</button>
+                    <nbsp/>
+                    <button class="btn btn-primary" onclick="changeVendors()">Toggle vendors</button>
+                    <nbsp/>
+                    <button class="btn btn-primary" onclick="toggleHeatmap()">Toggle heatmap</button>
+                    <br><br>
+                    <p>Heatmap Effects</p>
                     <button class="btn btn-primary" onclick="changeRadius()">Change radius</button>
+                    <nbsp/>
+                    <button class="btn btn-primary" onclick="changeGradient()">Change gradient</button>
+                    <nbsp/>
                     <button class="btn btn-primary" onclick="changeOpacity()">Change opacity</button>
+                    <br><br>
+                    <p>Presets</p>
+                    <button type="button" onclick="basicPreset()" class="btn btn-warning">
+                      Basic
+                    </button>
+                    <nbsp/>
+                    <button type="button" onclick="allPreset()" class="btn btn-warning">
+                      All layers
+                    </button>
+                    <nbsp/>
+                    <button type="button" onclick="resetZoom()" class="btn btn-danger">
+                      Reset zoom
+                    </button>
+                    <button type="button" onclick="resetAll()" class="btn btn-danger">
+                      Reset all
+                    </button>
+
                 </div>
 
                 <div class="modal-footer">
+
                     <button type="button" class="btn btn-default" data-dismiss="modal">
                    OK
                 </button>
@@ -346,16 +373,18 @@
                     opacity: 0.3
                 });
 
+                var infoWindow = new google.maps.InfoWindow({
+                    content: ""
+                });
+
                 d3.json("{{ url_for('static', filename='merchantData.json')}}", function(error, data) {
                     if (error) throw error;
                     // console.log(data);
                     var vendors = [];
-                    var markers = [];
+                    window.markers = [];
                     var windows = [];
                     var hash = {};
-                    var infoWindow = new google.maps.InfoWindow({
-                        content: ""
-                    });
+
                     for (var i = 0; i < data.merchants.length; i++) {
                         var name = data.merchants[i].name;
                         var type = data.merchants[i].category[0].replace(/_/g, ' ');
@@ -380,7 +409,7 @@
                         );
 
                     }
-
+                    window.vendors = true;
                     var table = document.getElementById("myTable");
                     var rows = table.getElementsByTagName("tr");
                     for (var i = 0; i < rows.length; i++) {
@@ -416,6 +445,51 @@
                         });
                     }
                 });
+                window.customer = true;
+                d3.json("{{ url_for('static', filename='Customer.json')}}", function(error, data) {
+                    if (error) throw error;
+                    // console.log(data);
+                    window.markers2 = [];
+                    var coordinates = [];
+                    var amounts = [];
+                    var hash = {};
+
+                    // console.log(data);
+                    for (var i = 0; i < data.customers.length; i++) {
+                        var amount = data.customers[i].withdrawal;
+                        var coordinate = data.customers[i].geocode;
+                        var marker = new google.maps.Marker({
+                            icon: {
+                                path: google.maps.SymbolPath.CIRCLE,
+                                scale: 10
+                            },
+                            position: coordinate,
+                            map: map,
+                            title: "Cusomer Withdrawal",
+                            clickable: true
+                        });
+                        var windowText = "<h2><b>$" + amount + "</b></h2>";
+                        // windows.push(windowText);
+                        markers2.push(marker);
+                        markers2[i].info = windowText;
+                        hash[
+                            marker
+                        ] = windowText;
+                        // marker.setVisible(false);
+                        // marker.setIcon('http://maps.google.com/mapfiles/ms/icons/white-dot.png');
+                        // $("#myTable").append(
+                        //     "<tr id=link" + i + "><td><b>" + name + "</b></td><td>" + type + "</td></tr>"
+                        // );
+                        // console.log(i);
+                        markers2[i].addListener('click', function() {
+                            // console.log(this);
+                            infoWindow.set("content", this.info);
+                            infoWindow.open(map, this);
+                        });
+                    }
+
+
+                });
 
             }
 
@@ -439,6 +513,54 @@
             function changeOpacity() {
                 heatmap.set('opacity', heatmap.get('opacity') ? null : 0.3);
             }
+
+            function changeVendors() {
+                window.vendors = !window.vendors;
+                for (var i = 0; i < window.markers.length; i++) {
+                    window.markers[i].setVisible(window.vendors);
+                }
+            }
+
+            function changeCustomers() {
+                window.customer = !window.customer;
+                for (var i = 0; i < window.markers2.length; i++) {
+                    window.markers2[i].setVisible(window.customer);
+                }
+            }
+
+            function basicPreset() {
+                window.customer = false;
+                changeCustomers();
+                window.vendors = true;
+                changeVendors();
+                heatmap.setMap(null);
+            }
+
+            function allPreset() {
+                window.customer = false;
+                changeCustomers();
+                window.vendors = false;
+                changeVendors();
+                heatmap.setMap(map);
+            }
+
+            function resetZoom() {
+                map.setZoom(13);
+                map.setCenter({
+                    lat: 38.9056371,
+                    lng: -77.0270598
+                });
+            }
+
+            function resetAll() {
+                resetZoom();
+                allPreset();
+                heatmap.set('gradient', null);
+                heatmap.set('radius', null);
+                heatmap.set('opacity', 0.3);
+            }
+
+
             // Heatmap data: 500 Points
             function getPoints() {
                 var points = [];
