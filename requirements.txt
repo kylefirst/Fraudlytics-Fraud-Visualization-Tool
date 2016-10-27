@@ -8,6 +8,5 @@ itsdangerous==0.24
 numpy==1.11.1
 protobuf==3.0.0b2
 six==1.10.0
-tensorflow==0.8.0
 virtualenv==15.0.3
 wheel==0.29.0
