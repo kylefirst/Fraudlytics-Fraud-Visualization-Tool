@@ -1,5 +1,5 @@
 # Data driven transaction fraud web visualization tool
-Submision for **HopHacks 2016**                 
+Submision for **HopHacks Fall 2016**                 
 Run this web application by starting **run.py**,
 then you can view the website on **localhost:5000**
 # Description
