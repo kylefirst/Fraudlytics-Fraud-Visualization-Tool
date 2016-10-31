@@ -1,6 +1,7 @@
 # Data driven transaction fraud web visualization tool
-Run this webapplication by starting run.py.
-Then you can view the website on localhost:5000
+Submision for **HopHacks 2016**                 
+Run this web application by starting **run.py**,
+then you can view the website on **localhost:5000**
 # Description
 Credit card Transactions (From Nessie API) in DC are shown on a map in conjunction with a heatmap of crime occurences and merchant/vendor locations parterned with Capital-One.
 
